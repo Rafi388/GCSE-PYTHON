@@ -1,0 +1,17 @@
+# IMPUT EXPLAINED
+# Imput is another function
+# Here is an example
+
+name = str(input("enter name")) # Casting for string
+print("your name is", name)
+
+age = int(input("enter age")) # Casting for integer 
+print("your age is", age)
+
+Favecolour = str(input("enter Fave colour")) # Casting for string 
+print("your Fave colour is", Fave colour)
+
+Favefloat = float(input("enter Fave float")) # Casting for float
+print("your Fave float is", Favefloat)
+
+
