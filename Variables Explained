@@ -1,0 +1,29 @@
+# Variables Explained
+
+#Variables Definition:
+#A named location
+#in a computers memory
+#That stores a value
+#and the value can change
+
+#example:
+name = "rafi" # This is a variable
+# The variable is called "name"
+# The variable contains a value, "Rafi"
+
+age = 14
+Favouritecolour = "Red"
+FavouriteGame = "Gta 5"
+console = "ps4"
+
+Character = "&"
+RealFloat = 4.44
+integer = 4
+bolean = True
+string = "Hello"
+
+print("This is a Character",Character)
+print("This is a Real_Float",RealFloat)
+print("This is a integer",integer)
+print("This is a bolean",bolean)
+print("This is a string",string)
