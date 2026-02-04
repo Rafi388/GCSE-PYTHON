@@ -1,0 +1,5 @@
+total = 0 
+while total <=5:
+  numb = int(input("enter a number")
+  total = total + num
+print("the last number u entered was{}".format (num))
