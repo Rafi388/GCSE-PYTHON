@@ -1,0 +1,9 @@
+firstname = str(input("enter your first name"))
+length = len(firstname)
+if length <5:
+    last name = str(input("enter your last name"))
+    fullname = [firstname + last name]
+    print (firstname.upper())
+
+else:
+    print(firstname.lower())
