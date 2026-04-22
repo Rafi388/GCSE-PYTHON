@@ -1,0 +1,4 @@
+car  = []
+car.append(input("enter a car"))
+car.append(input("enter 2 cars"))
+print (car)
