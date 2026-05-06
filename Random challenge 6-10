@@ -1,0 +1,119 @@
+#Random challenge6
+#write some code that is like a dice
+#the code says "spacebar to roll or...
+#...press x to exit"
+#You press the spacebar then enter..
+#It generates a number between 1 and 6
+#Then asks you the question again...
+#until you press "x" then enter and it stops
+
+import random
+
+while True:
+    user_input = input("Press SPACE then ENTER to roll, or 'x' then ENTER to exit: ")
+
+    if user_input.lower() == "x":
+        print("Goodbye!")
+        break
+    elif user_input == " ":
+        roll = random.randint(1, 6)
+        print(f"You rolled: {roll}")
+    else:
+        print("Invalid input. Press SPACE or 'x'.")
+
+
+#Random challenge8
+#Create a "guess the number" game
+#Where a random number between...
+#..1 to 5 is generated and stored
+#The user must guess the number
+#If the user guesses too high, "too high" is displayed
+#If the user guesses too low, "too low" is displayed
+#while the number isn’t guessed, a user must guess
+#when the number is guessed a message is displayed
+#"it took you x times to guess"
+#where x is the number if user guesses
+
+
+import random
+
+# Generate a random number between 1 and 5
+number = random.randint(1, 5)
+
+guess = None
+attempts = 0
+
+while guess != number:
+    guess = int(input("Guess a number between 1 and 5: "))
+    attempts += 1
+
+    if guess > number:
+        print("Too high")
+    elif guess < number:
+        print("Too low")
+
+print(f"It took you {attempts} times to guess!")
+
+#Random challenge9
+#Create a magic 8-ball!
+#Ask the user to type in a yes/no question
+#e.g. "Will I own a helicopter?"
+#Your code will randomly display one of 6 answers
+#e.g.yes/no/no chance/one day etc
+import random
+answers = [
+    "Yes",
+    "No",
+    "Maybe",
+    "Definitely",
+    "No chance",
+    "One day"
+]
+
+
+question = input("Ask a yes/no question: ")
+response = random.choice(answers)
+
+# Display the result
+print("🎱 Magic 8-Ball says:", response)
+
+import random
+
+weapons = ["rock", "paper", "scissors"]
+
+user_score = 0
+computer_score = 0
+
+while True:
+    user_choice = input("Enter rock, paper, or scissors (or 'quit' to stop): ").lower()
+
+    if user_choice == "quit":
+        print("Final Score:")
+        print("You:", user_score)
+        print("Computer:", computer_score)
+        break
+
+    if user_choice not in weapons:
+        print("Invalid choice, try again.")
+        continue
+
+    computer_choice = random.choice(weapons)
+
+    print("You chose:", user_choice)
+    print("Computer chose:", computer_choice)
+
+    if user_choice == computer_choice:
+        print("It's a draw!")
+
+    elif (user_choice == "rock" and computer_choice == "scissors") or \
+         (user_choice == "paper" and computer_choice == "rock") or \
+         (user_choice == "scissors" and computer_choice == "paper"):
+        print("You win!")
+        user_score += 1
+
+    else:
+        print("Computer wins!")
+        computer_score += 1
+
+    print("Score -> You:", user_score, "| Computer:", computer_score)
+    print("-" * 30)
