@@ -1,0 +1,10 @@
+outerarray = []
+innerarray = []
+innerarray2 = []
+
+print(outerarray)
+
+outerarray.append(innerarray)
+outerarray.append(innerarray2)
+
+print(outerarray)
