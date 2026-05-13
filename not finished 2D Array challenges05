@@ -1,0 +1,2 @@
+EmptyArray = [[a for column in range(5)] for row in range(2)]
+print(EmptyArray)
