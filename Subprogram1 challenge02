@@ -1,0 +1,9 @@
+def menu():
+    one = donomination
+    two = TeamDeathMatch
+    three = Headquarters
+    options = ("1.domination","2.TeamDeathmatch","3.headquarters")
+num = ("select 1 or 2 or 3")
+print (num)
+if num == 1:
+    print(one)
